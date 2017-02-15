@@ -3,10 +3,12 @@ layout: default
 ---
 
 <div class="ui text container">
+  <div class=" basic right floated ui segment">
+     <span class="likebtn-wrapper" data-theme="squarespace" data-identifier="{{ page.date | date: "%b %-d, %Y" }}" data-show_like_label="false" data-dislike_enabled="false"></span>
+  </div>
   <h1 class="ui header xo padding bottom">{{ page.title }}
-    <div class="sub header">{{ page.date | date: "%b %-d, %Y" }} |
+    <div class="sub header">{{ page.date | date: "%b %-d, %Y" }}
     </div>
   </h1>
-  <span class="likebtn-wrapper" data-theme="squarespace" data-identifier="{{ page.date | date: "%b %-d, %Y" }}" data-show_like_label="false" data-dislike_enabled="false"></span>
     {{ content }}
 </div>
