@@ -1,0 +1,29 @@
+---
+layout: page
+title: Blog Entries
+permalink: /blog/
+---
+
+<div class="ui divided items">
+  {% for post in site.posts %}
+  <div class="item">
+    <div class="content">
+      <a class="header" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <div class="meta">
+       <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+     </div>
+      <div class="description">
+        <p></p>
+        <p></p>
+      </div>
+      <div class="extra">
+        <span class="likebtn-wrapper" data-theme="slideshare" data-identifier="{{ page.date | date: "%b %-d, %Y" }}" data-dislike_enabled="false"></span>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+
+
+
+
+</div>

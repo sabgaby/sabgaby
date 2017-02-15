@@ -1,0 +1,43 @@
+# Site settings
+title: sabgaby
+email: gabriela.sanchez@unige.ch
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: sabgaby
+github_username:  sabgaby
+
+# Build settings
+markdown: kramdown
+permalink: /:title
+
+include: ["_pages", "_works"]
+exclude: ["vendor", "Gemfile", "Gemfile.lock", "README.md", "node_modules", "gulpfile.js", "semantic.json"]
+
+collections:
+  works:
+    output: true
+
+gems:
+  - jemoji
+  - algoliasearch-jekyll
+
+algolia:
+  application_id: '0ZOC7G44GQ'
+  index_name:     'sabgaby'
+  read_only_api_key: 'af5d43c2fe4dd921be946e80957a18db'
+  lazy_update: true
+  excluded_files:
+    - 404.html
+    - index.html
+
+
+
+
+
+# Embeds
+
+# API keys

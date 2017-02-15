@@ -6,17 +6,26 @@
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
-  <!-- CDN SEMANTIC
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.6/jquery.min.js"></script> -->
 
-<!-- Local SEMANTIC -->
-<link rel="stylesheet" type="text/css" href="assets/semantic/dist/semantic.min.css">
-<script src="assets/semantic/dist/semantic.min.js"></script>
+  <link rel="stylesheet" href="{{ "/assets/fonts/academicons-1.7.0/css/academicons.min.css" | prepend: site.baseurl }}"/>
+  <script src="https://use.fontawesome.com/2e5ba52749.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/instantsearch.js/1.10.3/instantsearch.min.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/instantsearch.js/1.10.3/instantsearch.min.js"></script>
+
+  <!-- Local SEMANTIC -->
+  <link rel="stylesheet" type="text/css" href="{{ "/assets/semantic/dist/semantic.min.css" | prepend: site.baseurl }}">
+  <script type="text/javascript" src="{{ "/assets/semantic/dist/semantic.min.js" | prepend: site.baseurl }}"></script>
+  <script type="text/javascript">$('.ui.accordion').accordion();</script>
+
+  <link rel="stylesheet" type="text/css" href="{{ "/assets/css/styles.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" type="text/css" href="{{ "/assets/css/algolia.css" | prepend: site.baseurl }}">
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.css">
+
+  <script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
 
 </head>

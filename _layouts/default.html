@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="content container">
+      <div class="ui container xo padding top fourfold">
+        <article class="algolia__initial-content js-algolia__initial-content">
+          {{ content }}
+        </article>
+
+        <div class="algolia__search-content js-algolia__search-content">
+          <h1 class="ui center aligned header xo padding bottom">Search Results</h1>
+          <div class="posts algolia__results"></div>
+        </div>
+      </div>
+    </div>
+
+
+
+    {% include footer.html %}
+
+    <script src="https://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.js"></script>
+    <script type="text/javascript" src="{{ "/assets/js/instantsearch.js" | prepend: site.baseurl }}"></script>
+
+  </body>
+
+</html>

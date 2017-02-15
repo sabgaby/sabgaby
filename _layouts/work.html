@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<div class="ui text container">
+  {% if page.pdf != none %}
+  <a href="/work/{{ page.cite }}/{{ page.pdf }}.pdf" target="_blank"><button class="ui medium red right floated icon circular button" data-tooltip="Open PDF">
+    <i class="icon file pdf outline"></i>
+  </button></a>
+  {% endif %}
+  <h1 class="ui center aligned header xo padding bottom">{{ page.title }}
+    <div class="sub header">{{ page.subtitle }}
+    </div>
+  </h1>
+    {{ content }}
+</div>

@@ -1,0 +1,85 @@
+---
+# This is the Front Matter block
+---
+
+$pad: 1em;
+
+
+.xo.marginless {
+  margin: 0em;
+}
+
+.xo.paddingless {
+  padding: 0em;
+}
+
+.xo.marginfull {
+  margin: $pad;
+}
+
+.xo.margin.bottom {
+  margin-bottom: $pad;
+
+  &.twofold {
+  margin-bottom: ($pad*2);
+  }
+  &.fourfold {
+  margin-bottom: ($pad*4);
+  }
+  &.sixfold {
+  margin-bottom: ($pad*6);
+  }
+  &.eightfold {
+  margin-bottom: ($pad*8);
+  }
+}
+
+.xo.padding.bottom {
+  padding-bottom: $pad;
+
+  &.half {
+    padding-bottom: ($pad/2) !important;
+  }
+
+  &.without {
+    padding-bottom: 0em !important;
+  }
+
+  &.twofold {
+  padding-bottom: ($pad*2);
+  }
+  &.fourfold {
+  padding-bottom: ($pad*4);
+  }
+  &.sixfold {
+  padding-bottom: ($pad*6);
+  }
+  &.eightfold {
+  padding-bottom: ($pad*8);
+  }
+}
+
+.xo.padding.top {
+  padding-top: $pad;
+
+  &.half {
+    padding-top: ($pad/2) !important;
+  }
+
+  &.without {
+    padding-top: 0em !important;
+  }
+
+  &.twofold {
+  padding-top: ($pad*2);
+  }
+  &.fourfold {
+  padding-top: ($pad*4);
+  }
+  &.sixfold {
+  padding-top: ($pad*6);
+  }
+  &.eightfold {
+  padding-top: ($pad*8);
+  }
+}
