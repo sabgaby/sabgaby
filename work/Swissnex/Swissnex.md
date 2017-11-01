@@ -1,15 +1,15 @@
 ---
-layout: work
-permalink: /work/swissnex/
-date: 2017-04-30
-pretty-date: March 2017 - April 2017
-cite: Swissnex
-title:  Untitled Work at Swissnex
+title: Untitled Work at Swissnex
 subtitle:
 description: Digital Fellow at Swissnex San Francisco
+parent: swissnex
+chapter: Abstract
+flow: 1
+date: 2017-04-30
+pretty-date: March 2017 - April 2017
 tags:
-  - Residency
-  - Research
+  - residency
+  - research
 ---
 
 ## Introduction

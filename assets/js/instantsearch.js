@@ -3,13 +3,8 @@ var search = instantsearch({
 	apiKey: "af5d43c2fe4dd921be946e80957a18db",
 	indexName: 'sabgaby',
 	searchParameters: {
-	 facetsRefinements: {
-		 layout: ['work']
-	 },
-	 // Add to "facets" all attributes for which you
-	 // do NOT have a widget defined
-	 facets: ['layout']
- },
+	 filters: 'flow:1',
+ }
 });
 
 

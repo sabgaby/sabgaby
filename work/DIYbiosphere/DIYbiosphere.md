@@ -1,16 +1,16 @@
 ---
-layout: work
-permalink: /work/diybiosphere/
-date: 2017-05-10
-pretty-date: March 2016 -
-cite: DIYbiosphere
-title:  DIYbiosphere
+title: DIYbiosphere
 subtitle:
 description: Find and Map DIYbio initiatives from all over the world
+parent: diybiosphere
+chapter: Abstract
+flow: 1
+date: 2017-05-10
+pretty-date: March 2016 -
 tags:
-  - Database
-  - Website
-  - Project
+  - database
+  - website
+  - project
 ---
 
 The DIYbiosphere is a participatory project to build a library of worldwide DIYbio initiatives. The project is open-source, which means anyone can add and edit entries to the library as well as to shape the overall project. The source files are hosted on GitHub at [DIYbiosphere/sphere], and the library can be accessed and searched through a friendly interface as a wiki-style website at [sphere.diybio.org].

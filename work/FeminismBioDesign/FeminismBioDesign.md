@@ -1,22 +1,18 @@
 ---
-layout: work
-permalink: /work/feminismbiodesign/
-date: 2016-07-22
-pretty-date: July 22-23, 2016
-cite: FeminismBioDesign
-pdf: Feminism as a Tool for BioDesign - Gabriela A. Sanchez (2016)
-title:  Feminism as a Tool for BioDesign
+title: Feminism as a Tool for BioDesign
 subtitle:
 description: Presentation and zine for BioDesign NightScience
+parent: feminismbiodesign
+chapter: Abstract
+flow: 1
+date: 2016-07-22
+pretty-date: July 22-23, 2016
+pdf: Feminism as a Tool for BioDesign - Gabriela A. Sanchez (2016)
 tags:
-  - Publication
-  - Presentation
+  - publication
+  - presentation
 ---
 
-# Prologue
-An event 22-23 July 2016 at Cite des Sciences et de l'Industrie, Paris, FR
-
-## Abstract
 
 bioDesign is designing with biology. Its implementation is so expansive it reaches from architecture to medicine. Our designs reflect the way we think the world is or how it should be—“Nothing comes without its world, so trying to know those worlds is crucial” - Donna Haraway. The design choices that we make envision and materialize alternative worlds and possible futures. So, what worlds and futures that bioDesign make?
 
