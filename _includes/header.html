@@ -1,22 +1,150 @@
 <header>
   <nav>
-    <div class="ui large inverted borderless menu">
-      <div class="ui container">
-        <div class="header item">
-          <a class="item" href="{{ site.baseurl }}/">{{ site.title }}</a>
-        </div>
-        <div class="ui transparent inverted left icon input">
-          <input type="text" class="algolia__input js-algolia__input" autocomplete="off" name="query" placeholder="Search site">
-          <i class="search icon"></i>
-        </div>
-        <div class="right menu">
-          <a href="/about/" class="item">About</a>
-          <a href="/research/" class="item">Research</a>
-          <a href="/works/" class="item">Works</a>
-          <a href="/blog/" class="item">Blog</a>
-          <a href="/contact/" class="item">Contact</a>
-        </div>
+
+    <div class="ui grid">
+      <!-- HEAD NAV COMPUTER AND TABLET -->
+      <div class="computer tablet only row">
+        <div class="ui top fixed borderless menu" id="menu-head">
+          <div class="ui container">
+              <a class="header item" href="{{ site.baseurl }}/">sabgaby</a>
+              <div class="item xo text small computer tablet only">phD-student@UNIGE>>#biohacking&pharma</div>
+              <div class="right menu">
+                <div class="item xo smaller text">
+                  <a href="http://orcid.org/0000-0003-4682-1616">
+                    <span class="fa-stack fa-lg">
+                      <i class="ai ai-orcid ai-2x" style="color: #A6CE39;"></i>
+                    </span>
+                  </a>
+
+                  <a href="https://www.researchgate.net/profile/Gabriela_Sanchez27">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x" style="color: #00d0af;"></i>
+                      <i class="ai ai-researchgate fa-stack-1x" style="color: white;"></i>
+                    </span>
+                  </a>
+
+                  <a href="https://twitter.com/sabgaby">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x" style="color: #00abf1;"></i>
+                      <i class="fa fa-twitter fa-stack-1x" style="color: white;"></i>
+                    </span>
+                  </a>
+
+                  <a href="https://github.com/sabgaby">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x" style="color: #732B7E;"></i>
+                      <i class="fa fa-github-alt fa-stack-1x" style="color: white;"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+          </div>
+        </div> <!-- close row-->
       </div>
-    </div>
+
+      <!-- HEAD NAV MOBILE ONLY -->
+      <div class="mobile only row">
+        <div class="ui top fixed borderless menu" id="menu-head">
+          <div class="ui container">
+              <a class="header item" href="{{ site.baseurl }}/">sabgaby</a>
+              <div class="right menu">
+                <div class="item xo smaller text">
+                  <a href="http://orcid.org/0000-0003-4682-1616">
+                    <span class="fa-stack fa-lg">
+                      <i class="ai ai-orcid ai-2x" style="color: #A6CE39;"></i>
+                    </span>
+                  </a>
+
+                  <a href="https://www.researchgate.net/profile/Gabriela_Sanchez27">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x" style="color: #00d0af;"></i>
+                      <i class="ai ai-researchgate fa-stack-1x" style="color: white;"></i>
+                    </span>
+                  </a>
+
+                  <a href="https://twitter.com/sabgaby">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x" style="color: #00abf1;"></i>
+                      <i class="fa fa-twitter fa-stack-1x" style="color: white;"></i>
+                    </span>
+                  </a>
+
+                  <a href="https://github.com/sabgaby">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x" style="color: #732B7E;"></i>
+                      <i class="fa fa-github-alt fa-stack-1x" style="color: white;"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+          </div>
+        </div> <!-- close row-->
+      </div>
+
+      <!-- PAGES NAV COMPUTER AND TABLET -->
+      <div class="computer tablet only row">
+        <div class="ui top fixed borderless menu" id="menu-pages">
+          <div class="ui container">
+            <a href="/about/" class="item">About</a>
+            <a href="/research/" class="item">Research</a>
+            <a href="/works/" class="item">Works</a>
+            <a href="/blog/" class="item">Blog</a>
+            <a href="/contact/" class="item">Contact</a>
+            <div class="right menu">
+              <div class="ui transparent icon input">
+                <input type="text" class="algolia__input js-algolia__input" autocomplete="off" name="query" placeholder="Search">
+                <i class="search icon"></i>
+              </div>
+              <div class="ui simple dropdown item">
+                EN
+                <i class="dropdown icon"></i>
+                <div class="menu">
+                  <div class="item">English</div>
+                  <div class="disabled item">Español</div>
+                  <div class="disabled item">Français</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- close row-->
+      </div>
+
+      <!-- PAGES NAV MOBILE ONLY -->
+      <div class="mobile only row">
+        <div class="ui top fixed borderless menu" id="menu-pages">
+          <div class="ui container">
+            <div class="ui simple dropdown item">
+              <i class="sidebar icon"></i>
+              <div class="menu">
+                <a href="/about/" class="item">About</a>
+                <a href="/research/" class="item">Research</a>
+                <a href="/works/" class="item">Works</a>
+                <a href="/blog/" class="item">Blog</a>
+                <a href="/contact/" class="item">Contact</a>
+              </div>
+            </div>
+
+            <div class="right menu">
+              <div class="ui transparent icon input">
+                <input type="text" class="algolia__input js-algolia__input" autocomplete="off" name="query" placeholder="Search">
+                <i class="search icon"></i>
+              </div>
+              <div class="ui simple dropdown item">
+                EN
+                <i class="dropdown icon"></i>
+                <div class="menu">
+                  <div class="item">English</div>
+                  <div class="disabled item">Español</div>
+                  <div class="disabled item">Français</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- close row-->
+      </div>
+
+
+    </div> <!-- close grid -->
+
   </nav>
 </header>

@@ -2,15 +2,30 @@
 layout: default
 ---
 
-<div class="ui text container">
-  {% if page.pdf != none %}
-  <a href="/work/{{ page.cite }}/{{ page.pdf }}.pdf" target="_blank"><button class="ui medium red right floated icon circular button" data-tooltip="Open PDF">
-    <i class="icon file pdf outline"></i>
-  </button></a>
-  {% endif %}
-  <h1 class="ui center aligned header xo padding bottom">{{ page.title }}
+
+  {% if page.parent == true %}
+  <h1 class="ui header">{{ page.title }}
     <div class="sub header">{{ page.subtitle }}
     </div>
   </h1>
+  {% for tag in page.tags %}
+  <div class="ui mini label">{{ tag }}</div>
+  {% endfor %}
+  {% include_relative prologue.md %}
+  {% include tabsmenu.html %}
+  {% else %}
+    {% assign parentpage = page.parenttitle  %}
+    {% for work in site.works %}
+      {% if work.title == parentpage %}
+      <h1 class="ui header">{{ work.title }}
+        <div class="sub header">{{ work.subtitle }}
+        </div>
+      </h1>
+        {% include tabsmenu.html %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
+
+
     {{ content }}
-</div>
