@@ -12,18 +12,28 @@ github_username:  sabgaby
 
 # Build settings
 markdown: kramdown
-permalink: /:title
 
-include: ["_pages", "_works"]
-exclude: ["vendor", "Gemfile", "Gemfile.lock", "README.md", "node_modules", "gulpfile.js", "semantic.json"]
-
-collections:
-  works:
-    output: true
+include:
+  - mypages
+  - myworks
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - semantic.json
+  - moveout
+  - notpages
 
 plugins:
   - jemoji
   - algoliasearch-jekyll
+
+collections:
+  myworks:
+    output: true
+  mypages:
+    output: true
 
 defaults:
   -
@@ -31,18 +41,19 @@ defaults:
       type: posts
     values:
       layout: post
+      permalink: /:year/:title/
   -
     scope:
-      type: pages
+      type: mypages
     values:
       layout: page
-
+      permalink: /pages/:path/
   -
     scope:
-      type: works
+      type: myworks
     values:
       layout: work
-      collection: work
+      permalink: /works/:path/
 
 algolia:
   application_id: '0ZOC7G44GQ'

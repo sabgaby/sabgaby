@@ -3,29 +3,10 @@ layout: default
 ---
 
 
-  {% if page.parent == true %}
-  <h1 class="ui header">{{ page.title }}
-    <div class="sub header">{{ page.subtitle }}
-    </div>
-  </h1>
-  {% for tag in page.tags %}
-  <div class="ui mini label">{{ tag }}</div>
-  {% endfor %}
-  {% include_relative prologue.md %}
-  {% include tabsmenu.html %}
-  {% else %}
-    {% assign parentpage = page.parenttitle  %}
-    {% for work in site.works %}
-      {% if work.title == parentpage %}
-      <h1 class="ui header">{{ work.title }}
-        <div class="sub header">{{ work.subtitle }}
-        </div>
-      </h1>
-        {% include tabsmenu.html %}
-      {% endif %}
-    {% endfor %}
-  {% endif %}
-
+<h1 class="ui header">{{ page.title }}
+  <div class="sub header">{{ page.subtitle }}
+  </div>
+</h1>
 
 
     {{ content }}
