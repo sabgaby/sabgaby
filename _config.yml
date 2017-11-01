@@ -49,9 +49,55 @@ algolia:
   index_name: 'sabgaby'
   read_only_api_key: 'af5d43c2fe4dd921be946e80957a18db'
   lazy_update: true
+  settings:
+    advancedSyntax: true
+    distinct: true
+    attributeForDistinct: 'url'
+    ignorePlurals: true
+    attributesToIndex:
+      - title
+      - chapter
+      - subtitle
+      - description
+      - date
+      - pretty-date
+      - unordered(text)
+      - unordered(tags)
+      - parent
+      - url
+      - slug
+      - flow
+    attributesForFaceting:
+      - title
+      - chapter
+      - date
+      - pretty-date
+      - tags
+      - parent
+      - flow
+    attributesToRetrieve:
+      - title
+      - subtitle
+      - description
+      - chapter
+      - date
+      - pretty-date
+      - pdf
+      - slides
+      - tags
+      - parent
+      - url
+      - slug
+      - flow
+    attributesToSnippet: ['text:20']
+    snippetEllipsisText: '[&hellip;]'
+    attributesToHighlight: ['*']
+    highlightPostTag: </span>
+    highlightPreTag: <span class="search-highlight">
+    minWordSizefor1Typo: 3
+    minWordSizefor2Typos: 7
   excluded_files:
     - 404.html
-    - index.html
 
 
 
