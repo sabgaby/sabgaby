@@ -21,13 +21,32 @@ collections:
   works:
     output: true
 
-gems:
+plugins:
   - jemoji
   - algoliasearch-jekyll
 
+defaults:
+  -
+    scope:
+      type: posts
+    values:
+      layout: post
+  -
+    scope:
+      type: pages
+    values:
+      layout: page
+
+  -
+    scope:
+      type: works
+    values:
+      layout: work
+      collection: work
+
 algolia:
   application_id: '0ZOC7G44GQ'
-  index_name:     'sabgaby'
+  index_name: 'sabgaby'
   read_only_api_key: 'af5d43c2fe4dd921be946e80957a18db'
   lazy_update: true
   excluded_files:
