@@ -1,11 +1,11 @@
 
-{% assign parentpage = page.path | remove:'_works/' | remove:page.slug | remove:'/'| remove:'.md'  %}
-{% assign works = site.works | sort: 'flow' %}
+{% assign parentpage = page.path | remove:'_myworks/' | remove:page.slug | remove:'/'| remove:'.md'  %}
+{% assign works = site.myworks | sort: 'flow' %}
 <div class="ui grid">
   <div class="computer tablet only row">
     <div class="ui secondary pointing tiny menu">
       {% for work in works %}
-       {% assign parentfolder = work.path | remove:'_works/' | remove:work.slug | remove:'/'| remove:'.md'  %}
+       {% assign parentfolder = work.path | remove:'_myworks/' | remove:work.slug | remove:'/'| remove:'.md'  %}
        {% if parentfolder == parentpage %}
          <a href="{{ work.url}}" {% if  work.chapter == page.chapter %} class="item active" {% else %} class="item" {% endif %}>{{ work.chapter}}</a>
         {% endif %}

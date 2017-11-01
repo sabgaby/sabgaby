@@ -2,11 +2,31 @@
 layout: default
 ---
 
-
+{% if page.flow == 1 %}
 <h1 class="ui header">{{ page.title }}
   <div class="sub header">{{ page.subtitle }}
   </div>
 </h1>
+{% for tag in page.tags %}
+<div class="ui mini label">{{ tag }}</div>
+{% endfor %}
+{% else %}
+  {% assign parent_page = page.parent  %}
+  {% for work in site.myworks %}
 
+    {% if work.parent == parent_page and work.flow == 1 %}
+      <h1 class="ui header">{{ work.title }}
+        <div class="sub header">{{ work.subtitle }}
+        </div>
+      </h1>
+      {% for tag in work.tags %}
+      <div class="ui mini label">{{ tag }}</div>
+      {% endfor %}
+
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+      {% include tabsmenu.html %}
 
     {{ content }}
