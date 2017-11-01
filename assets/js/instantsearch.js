@@ -24,7 +24,7 @@ search.addWidget(
 		templates: {
 			empty: 'Nothing matches that. Sorry!',
 			item: `	<a class="image" href="{{ url }}">
-						    <img src="/assets/img/{{ cite }}.png">
+						    <img src="/assets/img/{{ parent }}.png">
 						  </a>
 							<div class="content">
 								<div class="header">{{{ _highlightResult.title.value }}}</div>			</a>
@@ -36,11 +36,13 @@ search.addWidget(
 								</div>
 							</div>
 							<div class="extra content">
-								<span>
-									<div class="ui tiny label">
-										{{ tags }}
-									</div>
-								</span>
+							{{#tags}}
+							<span>
+								<div class="ui tiny label tag-color">
+									{{.}}
+								</div>
+							</span>
+							{{/tags}}
 							</div>`
 		},
 		cssClasses: {

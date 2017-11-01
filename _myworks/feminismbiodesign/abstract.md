@@ -14,6 +14,7 @@ tags:
 ---
 
 
+<div class="ui segment">
 bioDesign is designing with biology. Its implementation is so expansive it reaches from architecture to medicine. Our designs reflect the way we think the world is or how it should be—“Nothing comes without its world, so trying to know those worlds is crucial” - Donna Haraway. The design choices that we make envision and materialize alternative worlds and possible futures. So, what worlds and futures that bioDesign make?
 
 
@@ -21,3 +22,4 @@ bioDesign incorporates an ‘ecological’ perspective towards sustainability. B
 
 
 Feminists are committed to ‘seeing the unseen’ and to ‘care for the neglected’. Feminist thinking, such as situated knowledge and assemblages, can help us (re)consider “what [are we] really caring for, why, and at what cost to whom?” - Thom van Dooren. Feminism provides what tools to help us (re)think the worlds that we embed in our bioDesigns, and (re)imagine the bioFutures that we want to inhabit.
+</div>
