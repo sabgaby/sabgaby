@@ -22,12 +22,14 @@ exclude:
   - Gemfile.lock
   - README.md
   - semantic.json
-  - moveout
-  - notpages
+  - Rakefile
+  - .travis.yml
 
 plugins:
   - jemoji
   - algoliasearch-jekyll
+  - html-proofer
+  - rake
 
 collections:
   myworks:
