@@ -1,32 +1,15 @@
 language: ruby
-rvm:
-- 2.3.1
-
-before_install:
-  - gem update --system
-  - gem --version
-
-before_script:
-  - chmod +x ./script/cibuild
-  - chmod +x ./script/gh_pages_push
-
-script:
-   - 'if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then bash ./script/cibuild; fi'
-   - 'if [ "$TRAVIS_PULL_REQUEST" != "false" ]; then bash ./script/cibuild_pull_request; fi'
-
-after_success: ./script/gh_pages_push
-
-# branch whitelist
+# only run CI-builds on master branch
 branches:
   only:
-  - gh-pages
-
-env:
-  global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
-  - GITHUB_REPO: github.com/sabgaby/sabgaby.git
-  - GITHUB_REPO_BRANCH: gh-pages
-
+  - master
+rvm:
+- 2.2.3
+# set execution permission on our build script
+before_script:
+ - chmod +x ./script/cibuild
+# path to our build script.
+# Travis will run `bundle install` by default before running our script
+script: ./script/cibuild
 exclude: [vendor]
-
 sudo: false
