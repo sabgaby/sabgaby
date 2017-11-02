@@ -1,0 +1,108 @@
+#menu-top {
+  padding-bottom: 0; }
+
+#menu-pages {
+  margin-top: 50px; }
+
+#mainbody {
+  margin-top: 8em; }
+
+.xo.marginless {
+  margin: 0em !important; }
+
+.xo.paddingless {
+  padding: 0em !important; }
+
+.xo.marginfull {
+  margin: 1em; }
+
+.xo.margin.bottom {
+  margin-bottom: 1em; }
+  .xo.margin.bottom.twofold {
+    margin-bottom: 2em; }
+  .xo.margin.bottom.fourfold {
+    margin-bottom: 4em; }
+  .xo.margin.bottom.sixfold {
+    margin-bottom: 6em; }
+  .xo.margin.bottom.eightfold {
+    margin-bottom: 8em; }
+
+.xo.margin.top {
+  margin-bottom: 1em; }
+  .xo.margin.top.twofold {
+    margin-top: 2em; }
+  .xo.margin.top.fourfold {
+    margin-top: 4em; }
+  .xo.margin.top.sixfold {
+    margin-top: 6em; }
+  .xo.margin.top.eightfold {
+    margin-top: 8em; }
+  .xo.margin.top.tenfold {
+    margin-top: 10em; }
+
+.xo.margin.left {
+  margin-left: 1em; }
+  .xo.margin.left.half {
+    margin-left: 0.5em !important; }
+  .xo.margin.left.without {
+    margin-left: 0em !important; }
+  .xo.margin.left.twofold {
+    margin-left: 2em; }
+  .xo.margin.left.fourfold {
+    margin-left: 4em; }
+  .xo.margin.left.sixfold {
+    margin-left: 6em; }
+  .xo.margin.left.eightfold {
+    margin-left: 8em; }
+
+.xo.padding.bottom {
+  padding-bottom: 1em; }
+  .xo.padding.bottom.half {
+    padding-bottom: 0.5em !important; }
+  .xo.padding.bottom.without {
+    padding-bottom: 0em !important; }
+  .xo.padding.bottom.twofold {
+    padding-bottom: 2em; }
+  .xo.padding.bottom.fourfold {
+    padding-bottom: 4em; }
+  .xo.padding.bottom.sixfold {
+    padding-bottom: 6em; }
+  .xo.padding.bottom.eightfold {
+    padding-bottom: 8em; }
+
+.xo.padding.top {
+  padding-top: 1em; }
+  .xo.padding.top.half {
+    padding-top: 0.5em !important; }
+  .xo.padding.top.without {
+    padding-top: 0em !important; }
+  .xo.padding.top.twofold {
+    padding-top: 2em; }
+  .xo.padding.top.fourfold {
+    padding-top: 4em; }
+  .xo.padding.top.sixfold {
+    padding-top: 6em; }
+  .xo.padding.top.eightfold {
+    padding-top: 8em; }
+  .xo.padding.top.tenfold {
+    padding-top: 10em; }
+
+.xo.padding.left {
+  padding-left: 1em; }
+  .xo.padding.left.half {
+    padding-left: 0.5em !important; }
+  .xo.padding.left.without {
+    padding-left: 0em !important; }
+  .xo.padding.left.twofold {
+    padding-left: 2em; }
+  .xo.padding.left.fourfold {
+    padding-left: 4em; }
+  .xo.padding.left.sixfold {
+    padding-left: 6em; }
+  .xo.padding.left.eightfold {
+    padding-left: 8em; }
+
+.xo.text.small {
+  font-size: 0.9em; }
+.xo.text.smaller {
+  font-size: 0.8em; }

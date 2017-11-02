@@ -1,30 +1,31 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml"/>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
+    <title>sabgaby</title>
+    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</description>
+    <link>http://yourdomain.com/</link>
+    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 02 Nov 2017 08:59:42 +0000</pubDate>
+    <lastBuildDate>Thu, 02 Nov 2017 08:59:42 +0000</lastBuildDate>
+    <generator>Jekyll v3.6.2</generator>
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
+        <title>Hello, World!</title>
+        <description>&lt;p&gt;It seems appropriate that I introduce myself with “Hello, World!” into–what I expect be–my awkward journey into the world of blogging. I must confess I do this bedrugingly. I blank when I think about what should I write, let alone think who might be interested in reading it. I am not really a ‘sharer’, I guess that’s why I am mostly a ‘lurker’ in social networks. I rarely share, retweet, much less post my own stuff. But I want to change that.&lt;/p&gt;
+
+&lt;p&gt;I am in the process of doing my PhD, and I would like to achieve two things with this blog. First, I want to share my research. I think this medium is a great way to communicate about my projects and give a better introduction and context to my work. My main interest in doing this is to connect with people. I know there are very interesting people out there who I would love to meet and learn more about their work, and maybe some would like to learn more about mine. And the best way for people to connect with me is for them to know what I am doing and what I am interested in.&lt;/p&gt;
+
+&lt;p&gt;My second goal is a bit more personal. It is about learning how to transfer my thoughts into writing without getting overwhealmed on the writing process, or the content for that matter. Writing for me is a frustrating experience, and I can’t have that if I am heading towards a career as a researcher. A blog is a perfect sandbox for me to get the writing out! With no worries and no rules on the topic, style or length. Just focusing on telling one precise point.&lt;/p&gt;
+
+&lt;p&gt;The point for this, my first blog, is to mark my first page on what I hope the outcome will be better writing and more fruitful connections.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 15 Jan 2017 00:00:00 +0000</pubDate>
+        <link>http://yourdomain.com/2017/hello-world/</link>
+        <guid isPermaLink="true">http://yourdomain.com/2017/hello-world/</guid>
+        
+        
       </item>
-    {% endfor %}
+    
   </channel>
 </rss>
