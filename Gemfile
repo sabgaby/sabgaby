@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
-gem 'jemoji',                   '~> 0.7.0'
+gem 'jemoji'
+gem 'html-proofer'
 
 group :jekyll_plugins do
-  gem 'algoliasearch-jekyll', '~> 0.8.0'
+  gem 'algoliasearch-jekyll'
 end
