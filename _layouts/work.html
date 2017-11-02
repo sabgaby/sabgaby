@@ -59,6 +59,13 @@ layout: default
   {% endfor %}
 {% endif %}
 
-      {% include tabsmenu.html %}
+<div class="ui segment xo small text">
+<em>
+{% include_relative prologue.md %}
+</em>
+</div>
+{% include tabsmenu.html %}
 
-    {{ content }}
+
+
+{{ content }}

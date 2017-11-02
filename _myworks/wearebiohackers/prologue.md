@@ -1,0 +1,2 @@
+For my master thesis I ventured into the social sciences and this is the resulting work.
+As many other 'makers of things', I don't look to kindly to my past works and think of ways I could have done better. I read it now and grimace at some oversimplications and cringe at all the things I took at face value without being more critical. Although--I must admit--at the same time I am kind of impressed at the work considering my education so far was in engineering. I still hold it fondly for being my first work in social sciences and the gateway into my current research.
