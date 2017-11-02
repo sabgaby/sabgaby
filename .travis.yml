@@ -19,7 +19,7 @@ after_success: ./script/gh_pages_push
 # branch whitelist
 branches:
   only:
-  - master # builds only master branches
+  - gh-pages
 
 env:
   global:
