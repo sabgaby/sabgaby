@@ -46,7 +46,7 @@ search.addWidget(
 							</div>`
 		},
 		cssClasses: {
-			root: 'ui link three cards',
+			root: 'ui link four stackable cards',
 			item:'ui centered card'
 		},
 		hitsPerPage: 10

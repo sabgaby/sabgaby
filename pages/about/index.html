@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>About Me</title>
-  <meta name="description" content="I am currently living in Switzerland doing a PhD in Science and Technology Studies at the University of Geneva.I am part of a research team rethinking Scienc...">
+  <meta name="description" content="This is me as Gabriela the scientist.My Curriculum Vitae (see below) shows my "productive" lifecourse.But with it I also share a Mini Biography, where I most...">
 
   <link rel="canonical" href="http://yourdomain.com/pages/about/">
   <link rel="alternate" type="application/rss+xml" title="sabgaby" href="http://yourdomain.com/feed.xml" />
@@ -18,10 +18,13 @@
 
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/instantsearch.js/1.10.3/instantsearch.min.css">
   <script type="text/javascript" src="https://cdn.jsdelivr.net/instantsearch.js/1.10.3/instantsearch.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"></script>
 
   <!-- Local SEMANTIC -->
   <link rel="stylesheet" type="text/css" href="/assets/semantic/dist/semantic.min.css">
   <script type="text/javascript" src="/assets/semantic/dist/semantic.min.js"></script>
+  <script type="text/javascript" src="/assets/semantic/dist/semantic.min.js"></script>
+
   <script type="text/javascript">$('.ui.accordion').accordion();</script>
   <script type="text/javascript">$('.menu .item').tab();</script>
   <script type="text/javascript">$('.tabular.menu .item').tab();</script>
@@ -209,17 +212,18 @@
           <article class="algolia__initial-content js-algolia__initial-content">
               <h1 class="ui center aligned header">About Me
   </h1>
-    <img class="ui medium rounded right floated image" src="/assets/img/gaby.png">
+    <div class="ui segment">
+This is me as Gabriela the scientist.
+My <em>Curriculum Vitae</em> (see below) shows my "productive" lifecourse.
+But with it I also share a <em>Mini Biography</em>, where I mostly describe the thoughts and choices that led me through my professional life.
+</div>
+<img class="ui medium rounded right floated image" src="/assets/img/gaby.png">
 <p><em>
 I am currently living in Switzerland doing a PhD in Science and Technology Studies at the University of Geneva.
 I am part of a research team rethinking Science and Public Participation; that is practices that are best known as "citizen science".
 My research focus is on Do-it-Yourself Biology (DIYbio) and Biohacking, particurly on Pharmaceutical Innovation.
 </em></p>
-<p>
-This is me as Gabriela the scientist.
-My <em>Curriculum Vitae</em> (see below) shows my "productive" lifecourse.
-But with it I also share a <em>Mini Biography</em>, where I mostly describe the thoughts and choices that led me through my professional life.
-</p>
+
 
 <p class="xo padding bottom">
 </p>
@@ -505,6 +509,12 @@ You can learn more about our work as a team at <a href="http://citizensciences.n
   ga('send', 'pageview');
 
 </script>
+<script type="text/javascript">
+anchors.options = {
+  visible: 'always',
+  placement: 'left'
+};
+anchors.add('h3');</script>\
 
   </body>
 
