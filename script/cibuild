@@ -15,11 +15,6 @@ bundle exec jekyll build
 #JEKYLL_ENV=production bundle exec jekyll build
 # bundle exec htmlproofer ./_site --disable-external --allow-hash-href
 
-
-
-# build with Jekyll into "_site"
-bundle exec jekyll build
-
 # push
 cd _site
 git config user.email ${EMAIL}

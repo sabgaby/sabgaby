@@ -2,7 +2,7 @@
 {% assign parentpage = page.path | remove:'_myworks/' | remove:page.slug | remove:'/'| remove:'.md'  %}
 {% assign works = site.myworks | sort: 'flow' %}
 <div class="ui grid xo padding top bottom twofold">
-  <div class="computer tablet only row">
+  <div class="row">
     <div class="ui secondary pointing tiny fluid menu">
       {% for work in works %}
        {% assign parentfolder = work.path | remove:'_myworks/' | remove:work.slug | remove:'/'| remove:'.md'  %}
@@ -11,9 +11,5 @@
         {% endif %}
       {% endfor %}
     </div>
-  </div>
-
-  <div class="mobile only row">
-
   </div>
 </div>

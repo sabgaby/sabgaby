@@ -24,6 +24,7 @@ exclude:
   - semantic.json
   - Rakefile
   - .travis.yml
+  - prologue.md
 
 plugins:
   - jemoji

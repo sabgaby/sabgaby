@@ -25,6 +25,17 @@ layout: default
       {% endif %}
     {% endfor %}
   </div>
+  {% if page.pdf or page.slides %}
+  <div class="item">
+    open:
+      {% if page.pdf %}
+        <a href="/assets/pdf/{{ page.slug }}.pdf">pdf</a>
+      {% endif %}
+      {% if page.slides %}
+        <a href="/assets/pdf/{{ page.slug }}.pdf">slides</a>
+      {% endif %}
+  </div>
+  {% endif %}
 </div>
 
 {% else %}
@@ -53,6 +64,17 @@ layout: default
             {% endif %}
           {% endfor %}
         </div>
+        {% if page.pdf or page.slides %}
+        <div class="item">
+          open:
+            {% if page.pdf %}
+              <a href="/assets/pdf/{{ page.slug }}.pdf">pdf</a>
+            {% endif %}
+            {% if page.slides %}
+              <a href="/assets/pdf/{{ page.slug }}.pdf">slides</a>
+            {% endif %}
+        </div>
+        {% endif %}
       </div>
 
     {% endif %}
